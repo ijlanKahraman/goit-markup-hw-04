@@ -154,13 +154,15 @@ body {
   width: 1440px;
   height: 600px;
   margin-top: 72px;
-
-  background:
-        /* top, transparent black, faked with gradient */ linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
-    /* bottom, image */ url(/images/people-office\ 1.png);
+    url(/images/people-office\ 1.png);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .sector-bir .container {
@@ -192,6 +194,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sector-birbutton:hover {
   background-color: #404bbf;
@@ -223,6 +226,16 @@ body {
 .sector-ikilist {
   margin-right: 0;
   width: calc((100% - 72px) / 4);
+}
+.sector-iki-svg-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
 }
 .sektor-ikiparagraf {
   line-height: 1.5;
@@ -429,7 +442,6 @@ body {
 }
 
 .icon {
-  border: 2px solid #2a2a2a;
-  border-radius: 8px;
-  fill: #2a2a2a;
+  width: 64px;
+  height: 64px;
 }
