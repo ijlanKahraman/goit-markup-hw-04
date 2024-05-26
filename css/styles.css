@@ -7,6 +7,8 @@
 }
 .header-title {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 img {
   display: block;
@@ -56,6 +58,18 @@ body {
   padding: 24px 0;
   display: flex;
   gap: 40px;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-list::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 .nav-list:hover {
   color: #404bbf;
@@ -67,7 +81,7 @@ body {
   color: #404bbf;
 }
 .nav-link {
-  color: #2e2f42;
+  color: #404bbf;
   padding-top: 24px;
 }
 .nav-link:hover {
@@ -102,6 +116,7 @@ body {
 }
 .adres-list-item {
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adres-list-item:hover {
   color: #404bbf;
@@ -289,7 +304,8 @@ body {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   flex-direction: column;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .sector-ucliste:hover {
   border: 2px solid purple;
@@ -439,7 +455,7 @@ body {
 .social-media-accaunts {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
 }
 .social-media-accaunts-attribute {
   width: 40px;
