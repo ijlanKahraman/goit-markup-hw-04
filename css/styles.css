@@ -158,7 +158,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office\ 1.png);
+    url(../images/people-office1.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -289,7 +289,7 @@ body {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   flex-direction: column;
-  box-shadow: 0px 1px grey;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .sector-ucliste:hover {
   border: 2px solid purple;
@@ -408,24 +408,33 @@ body {
   display: flex;
   flex-direction: row;
 }
-.secial-media-accaunts {
+.social-media-accaunts {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 20px;
+  padding-left: 24px;
+}
+.social-media-accaunts-attribute {
+  width: 40px;
+  height: 40px;
 }
 .social-media-button {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
-  width: 40px;
-  height: 40px;
-  flex-direction: column;
+}
+.social-media-button:hover {
+  background-color: #404bbf;
+}
+.social-media-button:focus {
+  background-color: #404bbf;
+}
+.social-media-accounts-icon {
+  fill: #f4f4fd;
 }
 .social-media-footer-title {
   font-family: Roboto;
