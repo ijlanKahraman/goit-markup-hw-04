@@ -456,6 +456,7 @@ body {
 .social-media-footer-div {
   display: flex;
   gap: 16px;
+  flex-direction: column;
 }
 .social-media-accaunts-attribute-footer {
   width: 100%;
@@ -494,4 +495,13 @@ body {
 .footer-main-div {
   display: flex;
   align-items: baseline;
+}
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+.social-media-accaunts-footer {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
 }
