@@ -51,7 +51,8 @@ body {
   position: relative;
   color: #404bbf;
 }
-.nav-list-ul::after {
+
+.nav-list::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -86,6 +87,7 @@ body {
 .nav-link {
   color: #404bbf;
   padding-top: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
   color: #404bbf;
@@ -116,6 +118,7 @@ body {
 .adres-list-ul {
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adres-list-item {
   color: #434455;
@@ -373,7 +376,7 @@ body {
 }
 .sector-dortliste:hover {
   transform: translateY(0%);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  box-shadow: stilini şu şekilde belirtiyoruz 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .sector-dort-liste-image-div {
@@ -382,7 +385,7 @@ body {
 }
 .sector-dort-paragraf {
   position: absolute;
-  top: 0;
+
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
