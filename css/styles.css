@@ -384,7 +384,9 @@ body {
   position: relative;
   overflow: hidden;
 }
-
+sector-dort-liste-image-div:hover {
+  transform: translateY(100%);
+}
 .sector-dort-paragraf {
   position: absolute;
   transform: translateY(100%);
