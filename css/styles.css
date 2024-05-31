@@ -748,8 +748,7 @@ input::placeholder {
   justify-content: center;
   fill: transparent;
 }
-.modal-form-window-form-label-name-input-checkbox-svg {
-}
+
 .modal-form-window-form-label-name-input-checkbox:checked + .Privacy-Policy {
   background-color: #404bbf;
   fill: #f4f4fd;
